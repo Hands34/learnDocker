@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t hands34/node .
   - docker images hands34/node
+
+before_deploy:
+  - docker login -u hands34 -p SidonieKlassen4!
+
+deploy:
+  provider: script
+  script: docker push hands34/node
+  on:
+    branch: master
