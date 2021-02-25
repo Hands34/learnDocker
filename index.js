@@ -2,7 +2,7 @@ import express from 'express';
 import mongodb from 'mongodb';
 import config from './data';
 
-//test
+//tester
 
 const app = express();
 const PORT = 4000;
